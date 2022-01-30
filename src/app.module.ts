@@ -11,7 +11,7 @@ import { GeocodeModule } from './geocode/geocode.module';
     {
       isGlobal: true,
     }
-  ),TypeOrmModule.forRoot({
+  ), TypeOrmModule.forRoot({
     "type": "mysql",
     "host": process.env.DB_HOST,
     "port": 3306,
@@ -24,4 +24,4 @@ import { GeocodeModule } from './geocode/geocode.module';
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
